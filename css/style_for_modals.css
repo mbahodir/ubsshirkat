@@ -1,0 +1,178 @@
+/*Стиль для модального диалогового окно с формой*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+input, select {
+    margin: 0;
+    padding:  0;
+    border: unset;
+    border-bottom: 1px solid #789da3;
+    border-radius: 5px;
+    outline: none;
+    width: 90%;
+}
+
+/*add*/
+#addcons, #addpay, #addflattype {
+  background-image: url(../background.jpg);
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  width: 600px;
+  border: 1px solid black;
+  vertical-align: middle;
+  
+}
+
+#container_addcons, #container_addpay, #container_addflattype {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#container_addcons:before, #container_addpay:before, #container_addflattype:before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+}
+
+/*viewcons*/
+#viewcons {
+  background-image: url(../background.jpg);
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  min-width: 35%;
+  border: 1px solid black;
+  /*background: #bcd0ec;*/
+  vertical-align: middle;
+  
+}
+
+#container_viewcons, #container_viewpay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#container_viewcons:before, #container_viewpay:before {
+  display: inline-block;
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+}
+
+/*edit*/
+#editcons, #editpay, #editflattype {
+  background-image: url(../background.jpg);
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  width: 600px;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+#container_editcons, #container_editpay, #container_editflattype {
+  position: fixed;
+  top: 25%;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#container_editcons:before, #container_editpay:before, #container_editflattype:before {
+  display: inline-block;
+  height: 100%;
+  /*content: '';*/
+  vertical-align: middle;
+}
+
+/*viewpay*/
+#viewpay {
+  background-image: url(../background.jpg);
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  width: 90%;
+  border: 1px solid black;
+  /*background: #bcd0ec;*/
+  vertical-align: middle;
+}
+
+#viewpay thead {
+  opacity: 0.8;
+}
+
+/************************/
+#cover-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  /*background-color: gray;*/
+  opacity: 0.3;
+}
+
+.row_modal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.col_modal {
+  padding: 10px 10px;
+  margin: 10px 2px;
+  background: #fff;
+  opacity: 0.95;
+  font-size: 14px;
+  flex-grow: 1;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.col_modal label {
+    font-size: 14px;
+    padding: 0;
+    /*text-align: right;*/
+}
+
+.col_modal input, b, select {
+  font-size: 14px;
+  /*color: blue;*/
+  margin: 0;
+}
+
+.col_modal textarea {
+  font-size: 18px;
+  /*color: blue;*/
+  resize: none;
+}
+
+.col_modal_label {
+  margin: 10px 2px;
+  padding: 10px 10px;
+  background: #fff;
+  opacity: 0.9;
+  text-align: right;
+  border-radius: 10px;
+}
